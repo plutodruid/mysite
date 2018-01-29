@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-left vertical-middle-sm">
+    <h1>大时代的小访客</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+    <ul>
+    {% for blog in blogs %}
+        <li>{{blog.title}}</li>
+    {% endfor %}
+    </ul>
+    </div>
+    <div class="col-xs-6 col-md-4">
+    <h2>Pluto</h2>
+        <p><i>资深不爱国人士</i></p>
+    <img width="200px"  src="http://ww3.sinaimg.cn/mw690/005HJphYjw8fcj3n986jdj30g40c3dg6.jpg">
+        <p style="color: #c9302c"> 我的超链接：</p>
+        <div> <a href="http://www.yinwang.org/">当然我在扯淡——垠神</a></div>
+        <div> <a href="https://program-think.blogspot.com/">编程随想</a></div>
+        <div> <a href="http://6ubiubiu.com/forum.php">六通论坛</a></div>
+
+    </div>
+
+
+
+
+</div>
+{% endblock %}
